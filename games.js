@@ -43,22 +43,24 @@ window.GAMES = [
       'Juego anterior': '<a href="https://es.wikipedia.org/wiki/Bayonetta" target="_blank" rel="noopener">Bayonetta (2009)</a>'
     }
   },
-  {
-    id: "metal-gear-rising-revengeance",
-    title: "Metal Gear Rising: Revengeance",
-    image: "images/metalgear.jpg",
-    genres: [
-      "Acción",
-      "Hack & Slash"
-    ],
+    {
+    id: 'metal-gear-rising',
+    title: 'Metal Gear Rising: Revengeance',
+    image: 'images/metalgear.png', 
+    genres: ['Acción', 'Hack & Slash'],
     score: 83,
-    platforms: [
-      "PC",
-      "PS3",
-      "Xbox 360"
-    ],
-    short: "Raiden y sus cortes imposibles.",
-    description: "Combina acción rápida con un sistema de corte libre, acompañado de una de las bandas sonoras más memorables."
+    platforms: ['PC', 'PS3', 'Xbox 360'],
+    short: 'Raiden y sus cortes imposibles.',
+    description: `Combina acción rápida con un sistema de corte libre, acompañado de una de las bandas sonoras más memorables.`,
+    facts: {
+      'Desarrollado por': 'PlatinumGames',
+      'Publicado por': 'Konami',
+      'Lanzamiento': '19 de febrero de 2013',
+      'Plataforma/s': ['PlayStation 3', 'Xbox 360', 'PC'],
+      'Motor': 'Fox Engine',
+      'Género': 'Hack and Slash',
+      'Juego relacionado': '<a href="https://es.wikipedia.org/wiki/Metal_Gear_Solid_4:_Guns_of_the_Patriots" target="_blank" rel="noopener">Metal Gear Solid 4: Guns of the Patriots</a>'
+    }
   },
   {
     id: "god-of-war-2018",
