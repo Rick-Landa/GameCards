@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>GameCards — Catálogo de videojuegos</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <script defer src="descriptions.js"></script>
+  <script defer src="games.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <header class="topbar">
+    <div class="wrap bar">
+      <h1 class="brand">GameCards</h1>
+      <label class="search" role="search">
+        <span aria-hidden="true">🔎</span>
+        <input id="q" type="search" placeholder="Buscar juego…" aria-label="Buscar juego"/>
+      </label>
+    </div>
+    <div class="wrap filters" aria-label="Filtros de categorías">
+      <button class="chip is-active" data-cat="all" aria-pressed="true">Todas</button>
+      <button class="chip" data-cat="Acción">Acción</button>
+      <button class="chip" data-cat="Aventura">Aventura</button>
+      <button class="chip" data-cat="Arcade">Arcade</button>
+      <button class="chip" data-cat="Deportes">Deportes</button>
+      <button class="chip" data-cat="Estrategia">Estrategia</button>
+      <button class="chip" data-cat="Simulación">Simulación</button>
+      <button class="chip" data-cat="Clásicos">Clásicos</button>
+      <button class="chip" data-cat="Mundo abierto">Mundo abierto</button>
+    </div>
+  </header>
+  <main id="contenido" class="wrap">
+    <section aria-labelledby="list-title">
+      <h2 id="list-title" class="sr-only">Listado de juegos</h2>
+      <div id="grid" class="grid" role="list"></div>
+      <p id="empty" class="empty" hidden>No hay resultados.</p>
+    </section>
+  </main>
+  <footer class="wrap foot">
+    <small>© <span id="year"></span> GameCards · HTML + CSS + JS</small>
+  </footer>
+</body>
+</html>
