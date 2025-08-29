@@ -46,7 +46,7 @@ window.GAMES = [
     {
     id: 'metal-gear-rising',
     title: 'Metal Gear Rising: Revengeance',
-    image: 'images/metalgear.png', 
+    image: 'images/metalgear.jpg', 
     genres: ['Acción', 'Hack & Slash'],
     score: 83,
     platforms: ['PC', 'PS3', 'Xbox 360'],
