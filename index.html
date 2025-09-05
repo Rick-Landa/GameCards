@@ -21,7 +21,8 @@
         <input id="q" type="search" placeholder="Buscar juego…" aria-label="Buscar juego">
       </div>
     </div>
-    <div class="wrap filters" aria-label="Filtros de categorías">
+    <section class="wrap filters" aria-labelledby="filters-title">
+      <h2 id="filters-title" class="sr-only">Filtros de categorías</h2>
       <button class="chip is-active" data-cat="all" aria-pressed="true">Todas</button>
       <button class="chip" data-cat="Acción">Acción</button>
       <button class="chip" data-cat="Aventura">Aventura</button>
@@ -31,8 +32,9 @@
       <button class="chip" data-cat="Simulación">Simulación</button>
       <button class="chip" data-cat="Clásicos">Clásicos</button>
       <button class="chip" data-cat="Mundo abierto">Mundo abierto</button>
-    </div>
+    </section>
   </header>
+
   <main id="contenido" class="wrap">
     <section aria-labelledby="list-title">
       <h2 id="list-title" class="sr-only">Listado de juegos</h2>
@@ -40,6 +42,7 @@
       <p id="empty" class="empty" hidden>No hay resultados.</p>
     </section>
   </main>
+
   <footer class="wrap foot">
     <small>© <span id="year"></span> GameCards · HTML + CSS + JS</small>
   </footer>
