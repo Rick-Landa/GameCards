@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="es" dir="ltr">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>GameCards — Catálogo de videojuegos</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles.css">
   <script defer src="descriptions.js"></script>
   <script defer src="games.js"></script>
   <script defer src="app.js"></script>
@@ -14,10 +14,12 @@
   <header class="topbar">
     <div class="wrap bar">
       <h1 class="brand">GameCards</h1>
-      <label class="search" role="search">
-        <span aria-hidden="true">🔎</span>
-        <input id="q" type="search" placeholder="Buscar juego…" aria-label="Buscar juego"/>
-      </label>
+      <div class="search" role="search">
+        <label for="q">
+          <span aria-hidden="true">🔎</span>
+        </label>
+        <input id="q" type="search" placeholder="Buscar juego…" aria-label="Buscar juego">
+      </div>
     </div>
     <div class="wrap filters" aria-label="Filtros de categorías">
       <button class="chip is-active" data-cat="all" aria-pressed="true">Todas</button>
